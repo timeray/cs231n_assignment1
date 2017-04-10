@@ -97,7 +97,7 @@ class TwoLayerNet(object):
             layer1_active = np.tanh(layer1)
 
         layer2 = layer1_active.dot(W2) + b2  # NxH @ HxC + 1xC = NxC
-        l2 = layer2[:]  # they mean scores without softmaxing
+        l2 = layer2[:]
         #############################################################################
         #                              END OF YOUR CODE                             #
         #############################################################################
